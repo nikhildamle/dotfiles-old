@@ -5,3 +5,13 @@ function source_if_exist {
 }
 
 export -f source_if_exist
+
+function command_exist {
+  if command -v $1 > /dev/null; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+export -f command_exist
