@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+FILE=$HOME/Desktop/$1.todo
+touch $FILE
+vim $FILE
