@@ -1,4 +1,5 @@
 DOTFILES_DIR=$HOME/dotfiles
+source ~/dotfiles/bash/init
 for file in $(find -L $DOTFILES_DIR -name *.bash); do
   source $file
 done
