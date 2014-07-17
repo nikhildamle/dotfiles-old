@@ -1,0 +1,3 @@
+if [ -f /etc/arch-release ]; then
+  pacman -Syu && pacman -S --no-confirm git
+fi
