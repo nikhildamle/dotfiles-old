@@ -12,11 +12,9 @@ pwd_name=""
 
 __parse_git_branch () {
   if command_exist __git_ps1; then
-    local bare_git=$(__git_ps1 | tr --delete '() ')
-  fi
-  if [[ -n $bare_git ]]; then
-    git_branch="\[$GRAY_F\][git:$bare_git]\[$NOCOLOR\]"
-  else #To clear the last value set if any.
+    git_branch="\[$GRAY_F\]$(__git_ps1)\[$NOCOLOR\]"
+  else
+    #To clear the last value set if any.
     git_branch=""
   fi
 }
