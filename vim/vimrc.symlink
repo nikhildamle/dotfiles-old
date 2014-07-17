@@ -1,0 +1,102 @@
+set nocompatible
+
+" Set terminal to 265-color.
+set  t_Co=256
+
+" Set the terminal's title.
+set title
+
+" Enable Mouse.
+set mouse=a
+
+" Enable hiding buffer without closing them.
+set hidden
+
+" No Beep.
+set visualbell
+" Make screen not to flash for errors.
+set vb t_vb=
+
+" Enable omnicomplete.
+set omnifunc=syntaxcomplete#Complete
+
+" IDE like completion.
+set completeopt=longest,menuone
+
+" Better tab completion in status line.
+set wildmode=longest:full
+set wildmenu
+
+" Don't make a backup before overwriting a file.
+set nobackup
+set nowritebackup
+
+" Keep swap files in one location.
+set directory=/tmp//
+
+" Use System clipboard.
+if has("unix")
+  "All UNIXes
+  set clipboard=unnamedplus
+elseif has("win32") || has("win16") || has("win64")
+  " On Windows
+  set clipboard=unnamed
+endif
+
+" Show line numbers.
+set number
+" Gutter Column used for numbering.
+set numberwidth=3
+
+" Always show status line.
+set laststatus=2
+" Always Show Ruler.
+set ruler
+
+" Disable Spell check.
+set nospell
+
+set colorcolumn=80
+
+" Use 2 spaces instead of tabs.
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+
+" Display tabs and trailing spaces.
+set list listchars=tab:>-,trail:·
+
+" Do not wrap long lines.
+set nowrap
+set linebreak
+set list listchars+=precedes:«,extends:»
+
+" Case-insensitive searching.
+set ignorecase
+" But case-sensitive if expression contains a capital letter.
+set smartcase
+" Highlight matches as you type.
+set incsearch
+" Highlight matches.
+set hlsearch
+
+" Do not automatically change directory.
+set noautochdir
+
+" vundle.vim must be sourced first.
+source ~/.vim/vundle.vim
+source ~/.vim/pluginsConfiguration.vim
+source ~/.vim/keybindings.vim
+source ~/.vim/autocommands.vim
+
+" Trun on syntax highlighting.
+syntax on
+
+" Set color scheme to use.
+set background=dark
+colorscheme nbd
+
