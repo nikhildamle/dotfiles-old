@@ -11,7 +11,9 @@ host_name=""
 pwd_name=""
 
 __parse_git_branch () {
-  local bare_git=$(__git_ps1 | tr --delete '() ')
+  if command_exist __git_ps1; then
+    local bare_git=$(__git_ps1 | tr --delete '() ')
+  fi
   if [[ -n $bare_git ]]; then
     git_branch="\[$GRAY_F\][git:$bare_git]\[$NOCOLOR\]"
   else #To clear the last value set if any.
