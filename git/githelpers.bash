@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 function pretty_git_log() {
   local HASH="%C(yellow)%h%C(reset)"
   local RELATIVE_TIME="%C(green)%ar%C(reset)"
