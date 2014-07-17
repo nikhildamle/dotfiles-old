@@ -47,6 +47,10 @@ for file in $(find -L $dotfiles_dir -name *.nodotsymlink); do
   ln -s $file $HOME/$link_name
 done
 
+# Source init file which contains helper functions
+# needed for the firstrun scripts
+source $dotfiles_dir/bash/init
+
 echo "Running Init scripts. Hang tight"
 for file in $(find -L $dotfiles_dir -name *.firstrun); do
   bash $file
