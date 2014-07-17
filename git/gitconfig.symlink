@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[user]
+	name = Nikhil Damle
+	email = nikhilbdamle@gmail.com
+[core]
+	excludesfile = /home/nikhil/.gitignore
