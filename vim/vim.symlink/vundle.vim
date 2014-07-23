@@ -11,6 +11,7 @@ Bundle 'gerw/vim-HiLinkTrace'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'chriskempson/base16-vim'
+Bundle 'vim-ruby/vim-ruby'
 " ########## Bundle Ends ##########
 
 filetype plugin indent on     " required!
