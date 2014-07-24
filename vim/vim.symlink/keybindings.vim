@@ -24,3 +24,5 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+inoremap <C-p> <C-x><C-o>
