@@ -7,8 +7,8 @@
 [alias]
 	d = difftool
 	l = "!bash -c pretty_git_log"
-[user]
-	name = Nikhil Damle
-	email = nikhilbdamle@gmail.com
 [core]
 	excludesfile = /home/nikhil/.gitignore
+[user]
+	name = Nikhil Damle
+	email = nikhilbcd@gmail.com
