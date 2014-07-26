@@ -12,6 +12,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'chriskempson/base16-vim'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 " ########## Plugins Ends ##########
 call vundle#end()
 filetype plugin indent on     " required!
