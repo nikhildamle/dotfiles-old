@@ -1,17 +1,17 @@
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
-" ########## My Bundles Here ##########
-Bundle 'gerw/vim-HiLinkTrace'
-"Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'chriskempson/base16-vim'
-Bundle 'vim-ruby/vim-ruby'
-" ########## Bundle Ends ##########
-
+Plugin 'gmarik/Vundle.vim'
+" ########## My Plugins Here ##########
+Plugin 'gerw/vim-HiLinkTrace'
+"Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'chriskempson/base16-vim'
+Plugin 'vim-ruby/vim-ruby'
+" ########## Plugins Ends ##########
+call vundle#end()
 filetype plugin indent on     " required!
