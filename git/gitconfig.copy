@@ -9,6 +9,3 @@
 	l = "!bash -c pretty_git_log"
 [core]
 	excludesfile = /home/nikhil/.gitignore
-[user]
-	name = Nikhil Damle
-	email = nikhilbcd@gmail.com
