@@ -1,0 +1,2 @@
+mkdir -p ~/npm
+npm config set prefix ~/npm-packages
